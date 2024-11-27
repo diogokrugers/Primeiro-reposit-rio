@@ -10,7 +10,6 @@ int maxProfit(int* prices, int pricesSize) {
     }
     return lucro;
 }
-
 /* Solução com brute force, rodou para os exemplos principais
 e foi até o testcase 200/212 até dar Time Limit Exceeded.
 Não tinha visto que esse problema é solucionado através de programação
