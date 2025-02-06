@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int* twoSum(int* nums, int numsSize, int target) {
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     
     for (int i=0; i < numsSize; i++){
         for (int j= i + 1; j< numsSize; j++){
@@ -21,8 +21,9 @@ int* twoSum(int* nums, int numsSize, int target) {
 int main() {
   //Só um teste:
   int nums[7] = {0,2,5,9,7,1,3};
+  int returnSize = 2;
 
-  int* indices = twoSum(nums, 7, 4);
+  int* indices = twoSum(nums, 7, 4, &returnSize);
 
   if (!indices) {
     printf("Nenhum índice foi encontrado.\n");
